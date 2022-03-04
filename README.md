@@ -6,9 +6,8 @@ The project is designed to get acquainted with system administration. The projec
 4. OpenSource CMS with Wordpress
 
 # Docker commands
-
-docker build -t $(IMAGE_NAME) . builds the image\
-docker run -it -p 80:80 -p 443:443 --name $(CONTAINER_NAME) $(IMAGE_NAME) runs the image as a container\
-docker stop $(CONTAINER_NAME) stops the container\
-docker rmi $(IMAGE_NAME) removes the image\
-docker rm $(CONTAINER_NAME) removes the container\
+`docker build -t $(IMAGE_NAME) .` builds the image\
+`docker run -it -p 80:80 -p 443:443 --name $(CONTAINER_NAME) $(IMAGE_NAME)` runs the image as a container\
+`docker stop $(CONTAINER_NAME)` stops the container\
+`docker rmi $(IMAGE_NAME)` removes the image\
+`docker rm $(CONTAINER_NAME)` removes the container\
